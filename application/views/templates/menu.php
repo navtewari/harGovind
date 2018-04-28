@@ -1,7 +1,7 @@
 <div class="header_bottom">
             <div class="container">
                 <div class="logo">
-                    <h1><a href="#">HarGovind Suyal<span>Inter College</span></a></h1>
+                    <h1><a href="#">HarGovind Suyal<span>Saraswati Vidya Mandir Inter College</span></a></h1>
                 </div>
                 <div class="navigation">
                     <div>

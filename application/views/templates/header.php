@@ -24,14 +24,14 @@
                     pause: 4000, //pause duration
                     panels: 5, //number of image panels
                     width: 1680,
-                    height: 250,
+                    height: 370,
                     nav: true   //show navigation
                 });
             });
         </script>
         <style>
             .vticker{
-                // border: 1px solid red;
+                //border: 1px solid red;
                 background: #fff;
                 margin-top: 15px;
                 width: auto;
@@ -39,10 +39,14 @@
             .vticker ul{
                 padding: 0;
             }
+            
+            .vticker ul h4{
+                color: #0997dd;
+            }
             .vticker li{
                 list-style: none;
                 border-bottom: 1px dashed #ff9933;
-                padding: 30px;
+                padding: 20px;
             }
             .et-run{
                 background: red;

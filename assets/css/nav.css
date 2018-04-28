@@ -7,7 +7,7 @@ label.mobile_menu span {
 }
 .navigation{
     float:right;
-    margin-top: -1.4em;
+    margin-top: -2.5em;
 }
 .nav {
     /* General Font */
@@ -34,7 +34,7 @@ ul.nav{
     padding:51px 20px 55px 20px;
     display: block;
     color:#000;
-    font-size:.85em;
+    font-size:.9em;
     text-transform:uppercase;
     border-width:5px 0 0 0;
     border-style:solid;

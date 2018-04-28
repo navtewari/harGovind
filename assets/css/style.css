@@ -14,7 +14,7 @@ body a{
 	-ms-transition:0.5s all;
 }
 .logo h1 {
-	font-size: 3em;
+	font-size: 3.2em;
 	text-transform: uppercase;
 	font-weight: 800;
 	margin-bottom:0;
@@ -161,7 +161,7 @@ text-decoration: none;
 /***** Header-bottom *****/
 .logo {
 	float: left;
-	padding:30px 0;
+	padding:20px 0;
 }
 .logo a{
 	display:block;
@@ -545,7 +545,7 @@ span.icon-male{
 	transition: all 0.4s ease;
 }
 .content-bottom {
-	padding:5em 0;
+	padding:2em 0;
 }
 .header-wrap {
 	font-size: 1.4em;
@@ -1046,7 +1046,7 @@ a.btn.btn-primary.btn2.btn-normal.btn-inline {
 	padding: 10px 40px;
 }
 h3.hist{
-	font-size: 3em;
+	font-size: 2.5em;
 	font-weight: 700;
 	margin-bottom:1em;
 	text-transform: uppercase;

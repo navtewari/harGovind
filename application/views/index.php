@@ -17,24 +17,24 @@
                         <div class="course_demo">
                             <ul id="flexiselDemo3">
                                 <li><img src="<?php echo base_url('assets/images/v1.jpg'); ?>" class="img-responsive" /><div class="desc">
-                                        <h3>Lorem Ipsum</h3>
-                                        <p>Lorem ipsum dolor<br> sit amet, consectetuer.</p>
+                                        <h3>Student name</h3>
+                                        <p>Class-XII<br> 2017-18</p>
                                     </div></li>
                                 <li><img src="<?php echo base_url('assets/images/v1.jpg'); ?>" class="img-responsive" /><div class="desc">
-                                        <h3>Lorem Ipsum</h3>
-                                        <p>Lorem ipsum dolor<br> sit amet, consectetuer.</p>
+                                        <h3>Student name</h3>
+                                        <p>Class-XI<br> 2017-18</p>
                                     </div></li>
                                 <li><img src="<?php echo base_url('assets/images/v1.jpg'); ?>" class="img-responsive" /><div class="desc">
-                                        <h3>Lorem Ipsum</h3>
-                                        <p>Lorem ipsum dolor<br> sit amet, consectetuer.</p>
+                                        <h3>Student name</h3>
+                                        <p>Class-X<br> 2017-18</p>
                                     </div></li>
                                 <li><img src="<?php echo base_url('assets/images/v1.jpg'); ?>" class="img-responsive" /><div class="desc">
-                                        <h3>Lorem Ipsum</h3>
-                                        <p>Lorem ipsum dolor<br> sit amet, consectetuer.</p>
+                                        <h3>Student name</h3>
+                                        <p>Class-IX<br> 2017-18</p>
                                     </div></li>
                                 <li><img src="<?php echo base_url('assets/images/v1.jpg'); ?>" class="img-responsive" /><div class="desc">
-                                        <h3>Lorem Ipsum</h3>
-                                        <p>Lorem ipsum dolor<br> sit amet, consectetuer.</p>
+                                        <h3>Student name</h3>
+                                        <p>Class-VIII<br> 2017-18</p>
                                     </div></li>
                             </ul>
                             <script type="text/javascript">
@@ -73,12 +73,12 @@
                     <div class="vticker">
                         <ul>                                
                             <li>                                        
-                                <h4>Subject</h4>
-                                <p>HarGovind Suyal has best Teaching facility in the city.</p>
+                                <h4>HarGovind Suyal</h4>
+                                <p align="justify">Teaching work is done by highly qualified and trained teacher with the help of latest technology</p>
                             </li>  
                             <li>                                        
-                                <h4>Subject</h4>
-                                <p>News</p>
+                                <h4>Our Pride</h4>
+                                <p align="justify">Two students Jyoti Kotal and Garvit Gangwar  selected in  I.F.S</p>
                             </li>  
                         </ul>
                     </div>
@@ -92,7 +92,7 @@
     </div>
     <div class="reservation_top">
         <div class="container">
-            <h3 class="hist">Welcome to HarGovind Suyal Inter College</h3>
+            <h3 class="hist">Welcome to HarGovind Suyal SARASWATI VIDYA MANDIR Inter College</h3>
             <div class="row">
                 <div class="col-sm-6">
                     <img src="<?php echo base_url('assets/images/h1.jpg'); ?>" class="img-responsive" alt=""/>

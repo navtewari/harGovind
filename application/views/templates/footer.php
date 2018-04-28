@@ -26,16 +26,14 @@
                     <div class="col-md-4 footer_grid">
                         <h4>Our Address</h4>
                         <div class="company_address">
-                            <p>500 Lorem Ipsum Dolor Sit,</p>
-                            <p>22-56-2-9 Sit Amet, Haldwani,</p>
-                            <p>India</p>
-                            <p>Phone:(00) 0000000000</p>
-                            <p>Fax: (000) 000 00 00 0</p>
-                            <p>Email: <span><a href="#">info(at)hargovindsuyal.com</a></span></p>
+                            <p>Kaladhungi Rd, kusumkhera</p>
+                            <p>Haldwani, Uttarakhand 263139, India</p>                            
+                            <p>Phone:05946–260560</p>
+                            <p>Mobile: (+91) 9410167966</p>
+                            <p>Email: <span><a href="#">hargovindsuyalkusumkhera1999(at)gmail.com</a></span></p>
                         </div>
                         <ul class="socials">
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>                            
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         </ul>
@@ -58,7 +56,8 @@
             </div>
         </div>
     </div>
-
+        <script src="<?PHP echo base_url('assets/js/jquery.easing.min.js'); ?>"></script>
+        <script src="<?PHP echo base_url('assets/js/jquery.easy-ticker.js'); ?>"></script>
     <script type="text/javascript">
                                     $(document).ready(function () {
 
@@ -66,7 +65,7 @@
                                             direction: 'up',
                                             easing: 'easeInOutBack',
                                             speed: 'slow',
-                                            interval: 8000,
+                                            interval: 4000,
                                             height: 'auto',
                                             visible: 2,
                                             mousePause: 0,
