@@ -13,10 +13,10 @@
                             <li><a href="<?php echo site_url('web/');?>">Home</a></li>
                             <li class="dropdown"><a href="#">Academics</a>
                                 <ul class="dropdown">
-                                    <li><a href="#">Admissions</a></li>
+                                    <li><a href="<?php echo site_url('web/admission');?>">Admissions</a></li>
                                     <li><a href="#">Teachers Profile</a></li>
                                     <li><a href="#">Activities</a></li>
-                                    <li><a href="#">Achievements</a></li>
+                                    <li><a href="<?php echo site_url('web/achievements');?>">Achievements</a></li>
                                 </ul>
                             </li>
                             <li><a href="<?php echo site_url('web/about');?>">About Us</a></li>

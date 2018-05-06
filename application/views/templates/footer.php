@@ -15,11 +15,11 @@
                         <h4>Our Programs</h4>
                         <div class="footer-list">
                             <ul>
-                                <li class="list_top"><a href="">Why HarGovind Suyal</a></li>
+                                <li class="list_top"><a href="<?php echo site_url('web/about');?>">Why HarGovind Suyal</a></li>
                                 <li class="list_top"><a href="">Teacher's Profile</a></li>
                                 <li class="list_top"><a href="">Activities</a></li>
                                 <li class="list_top"><a href="">Our Toppers</a></li>
-                                <li class="list_top"><a href="">Achievements</a></li>
+                                <li class="list_top"><a href="<?php echo site_url('web/achievements');?>">Achievements</a></li>
                             </ul>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                                                 up: '.up',
                                                 down: '.down',
                                                 toggle: '.toggle',
-                                                stopText: 'Stop !!!'
+                                                stopText: '<i class="fa fa-play" aria-hidden="true"></i>'
                                             }
                                         }).data('easyTicker');
 

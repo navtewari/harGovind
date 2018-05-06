@@ -4,7 +4,7 @@
                     <h3 class="hist">About HarGovind Suyal Intermediate School</span></h3>
                     <div class="row">
                         <div class="col-sm-6">
-                            <img src="<?php echo base_url('assets/images/h1.jpg');?>" class="img-responsive img-thumbnail" alt=""/>
+                            <img src="<?php echo base_url('assets/images/h2.jpg');?>" class="img-responsive img-thumbnail" alt=""/>
                         </div>
                         <div class="col-sm-6 history_grid">
                             <h3><a href="#">HarGovind Suyal Intermediate School</a></h3>
@@ -13,21 +13,21 @@
                         
                         <div class="col-sm-12 history_grid">
                             <h3><a href="#">Features of School</a></h3>
-                            <ul>
-                                <li>Teaching work is done by highly qualified and trained teacher with the help of latest technology.</li>
-                                <li>Candidate N.S.S in school.</li>
-                                <li>All around personality development based on Indian Culture and Modern based education system.</li>
-                                <li>Emphasized on the cultures full of patriotism and character generating.</li>
-                                <li>A good and suitable arrangement for developing moral education ande general Knowledge.</li>
-                                <li>Special attention on Physical and Mental development.</li>
-                                <li>Complete development of students interests.</li>
-                                <li>Extra coaching classes for weak students.</li>
-                                <li>To create competitive feelings among students with different type of competition.</li>
-                                <li>Good arrangement of library and reading room.</li>
-                                <li>Science laboratories    full of all new and modern instrument.</li>
-                                <li>Good facility of computer education with new and modern computers.</li>
-                                <li>Arrangement of security guard to look after the School.</li>
-                                <li>Modern facilities of internet and smart classes.</li>
+                            <ul class="list-group">
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Teaching work is done by highly qualified and trained teacher with the help of latest technology.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Candidate N.S.S in school.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> All around personality development based on Indian Culture and Modern based education system.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Emphasized on the cultures full of patriotism and character generating.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> A good and suitable arrangement for developing moral education ande general Knowledge.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Special attention on Physical and Mental development.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Complete development of students interests.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Extra coaching classes for weak students.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> To create competitive feelings among students with different type of competition.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Good arrangement of library and reading room.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Science laboratories    full of all new and modern instrument.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Good facility of computer education with new and modern computers.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Arrangement of security guard to look after the School.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Modern facilities of internet and smart classes.</li>
                             </ul>
                         </div>
                     </div>

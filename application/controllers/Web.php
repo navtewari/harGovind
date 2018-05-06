@@ -19,12 +19,20 @@ class Web extends CI_Controller {
         $this->load->view('about');
         $this->load->view('templates/footer');
     }
-
-    function courses() {        
-        $data['pageName']='Our Courses';
+    
+    function admission() {        
+        $data['pageName']='Admission';
         $this->load->view('templates/header');
         $this->load->view('templates/headInnerPage', $data);
-        $this->load->view('courses');
+        $this->load->view('admission');
+        $this->load->view('templates/footer');
+    }
+
+    function Achievements() {        
+        $data['pageName']='Our Achievements';
+        $this->load->view('templates/header');
+        $this->load->view('templates/headInnerPage', $data);
+        $this->load->view('achievement');
         $this->load->view('templates/footer');
     }  
     

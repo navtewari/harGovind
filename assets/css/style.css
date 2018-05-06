@@ -1090,10 +1090,10 @@ h2.staff_head{
 	line-height:1.5em;
 }
 .history_grid p{
-	font-size:0.95em;
+	font-size:1.1em;
 	color:#555;
-	line-height:1.8em;
-	margin:2em 0 1em;
+	line-height:1.5em;
+	margin:.8em 0 1em;
 }
 .history_grid h3 a{
 	color:#F94B4B;
