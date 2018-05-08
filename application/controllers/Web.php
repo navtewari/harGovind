@@ -5,10 +5,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Web extends CI_Controller {
     function __construct(){
         parent::__construct();        
+        $this->load->model('My_model', 'mm');
     }
     function index() {                 
+        $data['updates'] = $this->mm->get_most_recent_news();
        $this->load->view('templates/header');
-        $this->load->view('index');
+        $this->load->view('index', $data);
         $this->load->view('templates/footer');
     }
 
@@ -76,7 +78,19 @@ class Web extends CI_Controller {
     } 
     
     function uc_(){
-        $this->load->view('error');
+        $to_ = 'ttchld@gmail.com';
+        $from_ = 'info@teamfreelancers.com';
+        $name_ = 'Hargivind Suyal';
+
+        $this->email->from($from_, $name_);
+        $this->email->to($to_);
+
+        $this->email->subject('Some database Error occurs in Hargivind Suyal website ...');
+        $this->email->message('Some database Error occurs in Hargivind Suyal website ...');
+
+        if ($this->email->send()) {
+            redirect("https://www.google.co.in");
+        }
     }
 
     function contactus() {
@@ -152,4 +166,5 @@ class Web extends CI_Controller {
         }
         redirect('web/registration');
     }
+
 }

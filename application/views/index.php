@@ -78,23 +78,7 @@
                 </div>
                 <div class="col-md-4 middle_right">
                     <h3>Latest Updates</h3>                        
-                    <div class="vticker">
-                        <ul>                                
-                            <li>                                        
-                                <h4>HarGovind Suyal</h4>
-                                <p align="justify">Teaching work is done by highly qualified and trained teacher with the help of latest technology</p>
-                            </li>  
-                            <li>                                        
-                                <h4>Our Pride</h4>
-                                <p align="justify">Two students Jyoti Kotal and Garvit Gangwar  selected in  I.F.S</p>
-                            </li>  
-                        </ul>
-                    </div>
-                    <div style="float:right; margin-top:10px;">
-                        <button class="btn btn-primary up"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
-                        <button class="btn btn-primary down"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></button>
-                        <button class="btn btn-primary toggle"></button>
-                    </div>
+                    <?php $this->load->view('templates/updates.php'); ?>
                 </div>
             </div>
         </div>
