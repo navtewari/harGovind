@@ -15,65 +15,14 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="welcome_desc">
+                        <?php if(count($toppers) > 3){ ?>
+                            <?php $this->load->view('templates/toppers'); ?>
+                        <?php } else { ?>
                         <h3 align="center" style="margin-top:1em;"><b>HARGOVIND SUYAL SARASWATI VIDYA MANDIR  INTER COLLEGE  KUSUMKHERA HALDWANI</b></h3>
                         <h3 align="center" style="color: #0997dd; font-size: 1.7em;">(A Unit of Vidya Bharti)</h3>
                         <h3 align="center" style="color: #000; font-size: 1.5em;">( Hindi and English Medium Senior Secondary Co-ed School )</h3>
                         <h3 align="center"  style="color: #cc3300; font-size: 1.5em;line-height: 1.3em; margin-top:2em;"> A School that provide moral and value based education connecting<br> Indian culture & Traditions</h3>                        
-                        <!--div class="welcome_desc">                            
-                            <h3>Our Toppers (2017-18)</h3>
-                            <div class="course_demo">
-                                <ul id="flexiselDemo3">
-                                    <li><img src="<?php echo base_url('assets/images/v1.jpg'); ?>" class="img-responsive" /><div class="desc">
-                                            <h3>Student name</h3>
-                                            <p>Class-XII<br> 2017-18</p>
-                                        </div></li>
-                                    <li><img src="<?php echo base_url('assets/images/v1.jpg'); ?>" class="img-responsive" /><div class="desc">
-                                            <h3>Student name</h3>
-                                            <p>Class-XI<br> 2017-18</p>
-                                        </div></li>
-                                    <li><img src="<?php echo base_url('assets/images/v1.jpg'); ?>" class="img-responsive" /><div class="desc">
-                                            <h3>Student name</h3>
-                                            <p>Class-X<br> 2017-18</p>
-                                        </div></li>
-                                    <li><img src="<?php echo base_url('assets/images/v1.jpg'); ?>" class="img-responsive" /><div class="desc">
-                                            <h3>Student name</h3>
-                                            <p>Class-IX<br> 2017-18</p>
-                                        </div></li>
-                                    <li><img src="<?php echo base_url('assets/images/v1.jpg'); ?>" class="img-responsive" /><div class="desc">
-                                            <h3>Student name</h3>
-                                            <p>Class-VIII<br> 2017-18</p>
-                                        </div></li>
-                                </ul>
-                                <script type="text/javascript">
-                                    $(window).load(function () {
-                                        $("#flexiselDemo3").flexisel({
-                                            visibleItems: 4,
-                                            animationSpeed: 1000,
-                                            autoPlay: true,
-                                            autoPlaySpeed: 3000,
-                                            pauseOnHover: true,
-                                            enableResponsiveBreakpoints: true,
-                                            responsiveBreakpoints: {
-                                                portrait: {
-                                                    changePoint: 480,
-                                                    visibleItems: 1
-                                                },
-                                                landscape: {
-                                                    changePoint: 640,
-                                                    visibleItems: 2
-                                                },
-                                                tablet: {
-                                                    changePoint: 768,
-                                                    visibleItems: 2
-                                                }
-                                            }
-                                        });
-    
-                                    });
-                                </script>
-                                <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.flexisel.js'); ?>"></script>
-                            </div>
-                        </div-->
+                        <?php } ?>
                     </div>
                 </div>
                 <div class="col-md-4 middle_right">

@@ -9,6 +9,7 @@ class Web extends CI_Controller {
     }
     function index() {                 
         $data['updates'] = $this->mm->get_most_recent_news();
+        $data['toppers'] = $this->mm->get_toppers();
        $this->load->view('templates/header');
         $this->load->view('index', $data);
         $this->load->view('templates/footer');

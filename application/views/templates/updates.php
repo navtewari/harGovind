@@ -12,7 +12,7 @@
                                     </div>
                                     <?php if($item->PATH_ATTACH != 'x'){?>
                                         <div style="padding: 1px 3px; float: right; font-size: 10px; color: #0090aa;">
-                                        <?php echo anchor('#', '[ click for detail ]', 'style="color:#0090aa"');?>
+                                        <?php echo anchor(base_url('dpanel/_assets_/newsdetail/').'/'.$item->PATH_ATTACH, '[ click for detail ]', 'style="color:#0090aa" target="_blank"');?>
                                         </div>
                                     <?PHP } ?>
                                     <div style="clear: both; padding: 0px"></div>
