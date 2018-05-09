@@ -7,14 +7,14 @@
                                     <?php echo $item->NEWS; ?>
                                     <br>
                                     <div style="clear: both; padding: 1px"></div>
-                                    <div style="padding: 1px 3px; float: left; font-size: 10px; color: #0090aa;">
-                                    <?php echo $item->DATE_." | ".$item->TIME_;?>
-                                    </div>
                                     <?php if($item->PATH_ATTACH != 'x'){?>
-                                        <div style="padding: 1px 3px; float: right; font-size: 10px; color: #0090aa;">
+                                        <div style="padding: 1px 3px; float: left; font-size: 10px; color: #0090aa;">
                                         <?php echo anchor(base_url('dpanel/_assets_/newsdetail/').'/'.$item->PATH_ATTACH, '[ click for detail ]', 'style="color:#0090aa" target="_blank"');?>
                                         </div>
                                     <?PHP } ?>
+                                    <div style="padding: 1px 3px; float: right; font-size: 10px; color: #0090aa;">
+                                    <?php echo $item->DATE_." | ".$item->TIME_;?>
+                                    </div>
                                     <div style="clear: both; padding: 0px"></div>
                                 </p>
                             </li>  
