@@ -3,82 +3,108 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Web extends CI_Controller {
-    function __construct(){
-        parent::__construct();        
+
+    function __construct() {
+        parent::__construct();
         $this->load->model('My_model', 'mm');
     }
-    function index() {                 
+
+    function index() {
         $data['updates'] = $this->mm->get_most_recent_news();
         $data['toppers'] = $this->mm->get_toppers();
-       $this->load->view('templates/header');
+        $this->load->view('templates/header');
         $this->load->view('index', $data);
         $this->load->view('templates/footer');
     }
 
-    function about() {        
-        $data['pageName']='About Us';
+    function about() {
+        $data['pageName'] = 'About Us';
         $this->load->view('templates/header');
         $this->load->view('templates/headInnerPage', $data);
         $this->load->view('about');
         $this->load->view('templates/footer');
     }
-    
-    function admission() {        
-        $data['pageName']='Admission';
+
+    function admission() {
+        $data['pageName'] = 'Admission';
         $this->load->view('templates/header');
         $this->load->view('templates/headInnerPage', $data);
         $this->load->view('admission');
         $this->load->view('templates/footer');
     }
 
-    function Achievements() {        
-        $data['pageName']='Our Achievements';
+    function Achievements() {
+        $data['pageName'] = 'Our Achievements';
         $this->load->view('templates/header');
         $this->load->view('templates/headInnerPage', $data);
         $this->load->view('achievement');
         $this->load->view('templates/footer');
-    }  
-    
-    public function whyAIM() {              
-        $data['pageName']='Why AIM';
+    }
+
+    public function whyAIM() {
+        $data['pageName'] = 'Why AIM';
         $this->load->view('templates/header');
         $this->load->view('templates/headInnerPage', $data);
         $this->load->view('why');
         $this->load->view('templates/footer');
     }
 
-    public function recruiters() {              
-        $data['pageName']='Recruiters';
+    public function recruiters() {
+        $data['pageName'] = 'Recruiters';
         $this->load->view('templates/header');
         $this->load->view('templates/headInnerPage', $data);
         $this->load->view('recruiters');
         $this->load->view('templates/footer');
     }
-    
-    public function gallery() {              
-        $data['pageName']='Photo Gallery';
+
+    public function gallery() {
+        $data['pageName'] = 'Photo Gallery';
+        $data['gallery_category'] = $this->mm->get_gallery_category();
+
         $this->load->view('templates/header');
         $this->load->view('templates/headInnerPage', $data);
-        $this->load->view('gallery');
+        $this->load->view('gallery-category', $data);
         $this->load->view('templates/footer');
     }
-        
-    function contact() {     
-        $data['pageName']='Contact Us';
+    
+    public function profile() {
+        $data['pageName'] = 'Photo Gallery';
+        $data['profile'] = $this->mm->get_profile();
+
+        $this->load->view('templates/header');
+        $this->load->view('templates/headInnerPage', $data);
+        $this->load->view('profile', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function gallery_detail($id) {
+        $data['pageName'] = 'Photo Gallery';
+        $data['gallery'] = $this->mm->get_gallery($id);
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/headInnerPage', $data);
+        $this->load->view('gallery', $data);
+        $this->load->view('templates/footer');
+    }
+
+    function contact() {
+        $data['pageName'] = 'Contact Us';
         $this->load->view('templates/header');
         $this->load->view('templates/headInnerPage', $data);
         $this->load->view('contact');
         $this->load->view('templates/footer');
-    } 
-    
-    function registration() {     
-        $data['pageName']='Online Registration';
-        $this->load->view('templates/header');        
+    }
+
+    function registration() {
+        $data['pageName'] = 'Online Registration';
+        
+        $this->load->view('templates/header', $data);
+        //$this->load->view('templates/headInnerPage', $data);
         $this->load->view('registration', $data);
         $this->load->view('templates/footer');
-    } 
-    
-    function uc_(){
+    }
+
+    function uc_() {
         $to_ = 'ttchld@gmail.com';
         $from_ = 'info@teamfreelancers.com';
         $name_ = 'Hargivind Suyal';
@@ -112,14 +138,14 @@ class Web extends CI_Controller {
         $msg = $msg . "<br />";
         $msg = $msg . $this->input->post('txtPhone');
 
-        $to_ = 'aimhaldwani2014@gmail.com';
+        $to_ = 'hargovindsuyalkusumkhera1999@gmail.com, info@hargovindsuyal.org';
         $from_ = $this->input->post('txtemail');
         $name_ = 'Enquiry...';
 
         $this->email->from($from_, $name_);
         $this->email->to($to_);
 
-        $this->email->subject('Mail from Contact page of AIHM website');
+        $this->email->subject('Mail from Contact page of Hargovindsuyal website');
         $this->email->message($msg);
 
         if ($this->email->send()) {
@@ -129,11 +155,11 @@ class Web extends CI_Controller {
         }
         redirect('web/contact');
     }
-    
+
     function registerMe() {
         $this->email->set_mailtype("html");
 
-        $msg = "New Registration below:<br /><br />";                        
+        $msg = "New Registration below:<br /><br />";
         $msg = $msg . "<br /><br />";
 
         $msg = $msg . "--------------";
@@ -150,14 +176,14 @@ class Web extends CI_Controller {
         $msg = $msg . "<br />";
         $msg = $msg . "Message: " . $this->input->post('txtMessage');
 
-        $to_ = 'aimhaldwani2014@gmail.com';
+        $to_ = 'hargovindsuyalkusumkhera1999@gmail.com, info@hargovindsuyal.org';
         $from_ = $this->input->post('txtEmail');
         $name_ = 'New Registration...';
 
         $this->email->from($from_, $name_);
         $this->email->to($to_);
 
-        $this->email->subject('Online Registration from AIHM website');
+        $this->email->subject('Online Registration from hargovindsuyal website');
         $this->email->message($msg);
 
         if ($this->email->send()) {

@@ -14,13 +14,13 @@
                             <li class="dropdown"><a href="#">Academics</a>
                                 <ul class="dropdown">
                                     <li><a href="<?php echo site_url('web/admission');?>">Admissions</a></li>
-                                    <li><a href="#">Teachers Profile</a></li>
+                                    <li><a href="<?php echo site_url('web/profile');?>">Teachers Profile</a></li>
                                     <li><a href="#">Activities</a></li>
                                     <li><a href="<?php echo site_url('web/achievements');?>">Achievements</a></li>
                                 </ul>
                             </li>
                             <li><a href="<?php echo site_url('web/about');?>">About Us</a></li>
-                            <li><a href="#">Photo Gallery</a></li>                            
+                            <li><a href="<?php echo site_url('web/gallery');?>">Photo Gallery</a></li>                            
                             <li><a href="<?php echo site_url('web/contact');?>">Contact us</a></li>
                             <div class="clearfix"></div>
                         </ul>

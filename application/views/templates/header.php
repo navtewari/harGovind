@@ -90,9 +90,8 @@
                 <div class="container">
                     <div class="headertop_nav">
                         <ul>
-                            <li>For Admission Call :+91-9410167966,05946–260560</li>                            
-                            <li><a href="<?php echo site_url('web/contact'); ?>">Enquiry</a> /</li>
-                            <li><a href="<?php echo site_url('web/contact'); ?>">Email</a> /</li>
+                            <li>For Admission Call :+91-9410167966, 05946–260560</li>                                                        
+                            <li>/ <a href="<?php echo site_url('web/contact'); ?>">Email: hargovindsuyalkusumkhera1999(at)gmail.com</a> </li>
                         </ul>
                     </div>
                     <div class="header-top-right">

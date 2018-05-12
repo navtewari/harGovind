@@ -16,7 +16,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <a href="#" title="Enquiry" class="btn btn-primary btn-normal btn-inline " target="_self">Online registration</a>
+                    <a href="<?php echo site_url('web/registration');?>" title="Enquiry" class="btn btn-primary btn-normal btn-inline " target="_self">Online registration</a>
                 </div>
             </div>
         </div>

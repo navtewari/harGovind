@@ -16,9 +16,9 @@
                         <div class="footer-list">
                             <ul>
                                 <li class="list_top"><a href="<?php echo site_url('web/about');?>">Why HarGovind Suyal</a></li>
-                                <li class="list_top"><a href="">Teacher's Profile</a></li>
+                                <li class="list_top"><a href="<?php echo site_url('web/profile');?>">Teacher's Profile</a></li>
                                 <li class="list_top"><a href="">Activities</a></li>
-                                <li class="list_top"><a href="">Our Toppers</a></li>
+                                <li class="list_top"><a href="#">Our Toppers</a></li>
                                 <li class="list_top"><a href="<?php echo site_url('web/achievements');?>">Achievements</a></li>
                             </ul>
                         </div>
@@ -43,12 +43,12 @@
             </div>
             <div class="footer_bottom">
                 <div class="copy_right">
-                    <p>&copy; 2018 All Rights Reserved Designed by <a href="#">Teamfreelancers.com</a> </p>
+                    <p>&copy; 2018 All Rights Reserved Designed & Developed by <a href="http://www.teamfreelancers.com" target="_blank">Teamfreelancers.com</a> </p>
                 </div>
                 <div class="footer_nav">
                     <ul>
                         <li><a href="<?php echo site_url('web/');?>">Home</a></li>
-                        <li><a href="#">Gallery</a></li>                        
+                        <li><a href="<?php echo site_url('web/gallery');?>">Gallery</a></li>                        
                         <li><a href="<?php echo site_url('web/contact');?>">Contact</a></li>
                     </ul>
                 </div>

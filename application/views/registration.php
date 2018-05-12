@@ -5,29 +5,34 @@
 </div>
 </div>
 <!-- Ends Header -->
+<!------------ Start Content ---------------->
 <!------------ Start Content ---------------->  
 <div class="main">   
     <div class="reservation_top">
         <div class="container">          	 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <div class="contact_left">
-                        <h3><a href="#">Why Should You Join A<span style="text-transform:lowercase">im</span> Institute of Hotel Management?</a></h3>
-                        <ul id="general-info">
-                            <li>We Provide 100% Job Placement in India & Foreign Countries.</li>
-                            <li>We Conduct English Speaking & Personality Development Classes.</li>
-                            <li>We give Bar Tending Practicals of all Internationals Cocktail.</li>
-                            <li>We Organize Different Events Regularly & Students can Participate in Event Management.</li>
-                            <li>We have Hostel Facility Inside the Campus.</li>
-                            <li>Free Five Star Hotel Visit for all Students.</li>
-                            <li>We also give Chance to Earn While you Learn.</li>
-                            <li>We Provide 6 Month Industrial Training in Five Star Hotels.</li>
-                            <li>We give Library Facility to Student of International Books Collection.</li>
-                            <li>Highly Qualified Faculty with International Experience.</li>
-                        </ul>
+                        <h3>Why Should You Join <br>Hargovind Suyal Saraswati Vidya Mandir Inter College?</h3>
+                        <ul class="list-group">
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Teaching work is done by highly qualified and trained teacher with the help of latest technology.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Candidate N.S.S in school.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> All around personality development based on Indian Culture and Modern based education system.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Emphasized on the cultures full of patriotism and character generating.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> A good and suitable arrangement for developing moral education ande general Knowledge.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Special attention on Physical and Mental development.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Complete development of students interests.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Extra coaching classes for weak students.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> To create competitive feelings among students with different type of competition.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Good arrangement of library and reading room.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Science laboratories    full of all new and modern instrument.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Good facility of computer education with new and modern computers.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Arrangement of security guard to look after the School.</li>
+                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Modern facilities of internet and smart classes.</li>
+                            </ul>
                     </div>
                 </div>
-                <div class="col-md-6 contact_right">
+                <div class="col-md-5 contact_right">
                     <h3>Register Here</h3>
                     <div class="contact-form" style="background: #ffcc99; padding: 20px;">
                         <form action="<?PHP echo site_url('web/registerMe'); ?>" method="post">
@@ -43,14 +48,12 @@
                             <?php } ?>                            
                             <input type="text" name="txtName" required class="textbox" placeholder="Your Name">
                             <input type="email" name="txtEmail" class="textbox" placeholder="Your Email">                            							
-							<input type="number" pattern="[0-9]*" oninvalid="setCustomValidity('Plz enter 10 digit Contact Number');"  name="txtNumber" required="required" placeholder="PHONE NUMBER" class="textbox">
+                            <input type="number" pattern="[0-9]*" oninvalid="setCustomValidity('Plz enter 10 digit Contact Number');"  name="txtNumber" required="required" placeholder="PHONE NUMBER" class="textbox">
                             <select id="txtCourse" name="txtCourse" required onChange="getValues(this.value)">
-                                <option>Select Course</option>
-                                <option value="DegreeHotelManagement">Degree in Hotel Management </option>
-                                <option value="AirHostess">Diploma in Aviation (Air Hostess)</option>
-                                <option value="AdvancedHotelManagement">Advance Diploma in Hotel Management</option>
-                                <option value="DiplomaHotelManagement">Diploma in Hotel Management</option>
-                                <option value="DiplomaBarTending">Diploma in Bar Tending</option>                                
+                                <option>Select Class</option>
+                                <?php for($i=6; $i<=12; $i++){?>
+                                    <option value="<?php echo 'Class' . $i?>"><?php echo 'Class ' . $i?></option>
+                                <?php }?>                                                               
                             </select>
 
                             <input type="text" name="txtAddress" required class="textbox" placeholder="Address">
