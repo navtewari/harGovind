@@ -18,11 +18,6 @@
                             <tr><td>04</td><td>Diploma in Aviation (Air Hostess)</td><td>10th </td><td>1 yr </td><!--td>&#8377; 34,500/-</td--></tr>
 
                             <tr><td>05</td><td>Hostel Charges </td><td>-  </td><td>-</td><!--td>&#8377; 25,000/- per semester</td--></tr>
-
-
-
-
-
                         </table>
                     </div>
                 </div>
