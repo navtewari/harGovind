@@ -1,7 +1,7 @@
 <div class="main">   
     <div class="reservation_top">
         <div class="container">          	 
-            <h3 class="hist">Admission to HarGovind Suyal Intermediate School</span></h3>
+            <h3 class="hist">Admission to HarGovind Suyal Intermediate School</h3>
             <div class="row">
                 <div class="col-sm-6">
                     <img src="<?php echo base_url('assets/images/h3.jpg'); ?>" class="img-responsive img-thumbnail" alt=""/>

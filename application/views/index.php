@@ -57,18 +57,18 @@
                     <div class="post1">       
                         <h3><a href="#">Manager's Message</a></h3>                            
                         <p align="justify"><img src="<?php echo base_url('assets/images/avatar.png'); ?>" alt="image" class="img-responsive img-thumbnail" style="margin:0 10px; min-width: 170px;" align='left'> Education is the most important part of a person's life. It not only modifies the animal instincts but also instils moral and ethical merits. It is the responsibility of the educational institutions to provide an atmosphere of freedom to each and every one irrespective of any discrimination.</p>
-                        <nav class="cl-effect-7" id="cl-effect-7">
+                        <!--nav class="cl-effect-7" id="cl-effect-7">
                             <a href="#cl-effect-7">Read More</a>
-                        </nav>
+                        </nav-->
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="post1">
                         <h3><a href="#">Prinicipal's Message</a></h3>                                                        
                         <p align="justify"><img src="<?php echo base_url('assets/images/principal.jpg'); ?>" alt="image" class="img-responsive img-thumbnail" style="margin:0 10px;" align='left'> Hargovind Suyal Intermediate School situated far from the hustle and bustle of city life, surrounded by the peaceful mountains terrain a really healthy and congenial atmosphere, plans to introduce a new concept and effective technique of education in Hindi/English medium.</p>
-                        <nav class="cl-effect-7" id="cl-effect-7">
+                        <!--nav class="cl-effect-7" id="cl-effect-7">
                             <a href="#cl-effect-7">Read More</a>
-                        </nav>
+                        </nav-->
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <a href="#" title="Enquiry" class="btn btn-primary btn-normal btn-inline " target="_self">Online registration</a>
+                    <a href="<?php echo site_url('web/registration');?>" title="Enquiry" class="btn btn-primary btn-normal btn-inline " target="_self">Online registration</a>
                 </div>
             </div>
         </div>
