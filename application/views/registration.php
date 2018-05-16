@@ -15,21 +15,21 @@
                     <div class="contact_left">
                         <h3>Why Should You Join <br>Hargovind Suyal Saraswati Vidya Mandir Inter College?</h3>
                         <ul class="list-group">
-                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Teaching work is done by highly qualified and trained teacher with the help of latest technology.</li>
-                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Candidate N.S.S in school.</li>
-                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> All around personality development based on Indian Culture and Modern based education system.</li>
-                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Emphasized on the cultures full of patriotism and character generating.</li>
-                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> A good and suitable arrangement for developing moral education ande general Knowledge.</li>
-                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Special attention on Physical and Mental development.</li>
-                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Complete development of students interests.</li>
-                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Extra coaching classes for weak students.</li>
-                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> To create competitive feelings among students with different type of competition.</li>
-                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Good arrangement of library and reading room.</li>
-                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Science laboratories    full of all new and modern instrument.</li>
-                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Good facility of computer education with new and modern computers.</li>
-                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Arrangement of security guard to look after the School.</li>
-                                <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Modern facilities of internet and smart classes.</li>
-                            </ul>
+                            <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Teaching work is done by highly qualified and trained teacher with the help of latest technology.</li>
+                            <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Candidate N.S.S in school.</li>
+                            <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> All around personality development based on Indian Culture and Modern based education system.</li>
+                            <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Emphasized on the cultures full of patriotism and character generating.</li>
+                            <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> A good and suitable arrangement for developing moral education ande general Knowledge.</li>
+                            <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Special attention on Physical and Mental development.</li>
+                            <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Complete development of students interests.</li>
+                            <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Extra coaching classes for weak students.</li>
+                            <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> To create competitive feelings among students with different type of competition.</li>
+                            <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Good arrangement of library and reading room.</li>
+                            <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Science laboratories    full of all new and modern instrument.</li>
+                            <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Good facility of computer education with new and modern computers.</li>
+                            <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Arrangement of security guard to look after the School.</li>
+                            <li class="list-group-item"><i class="fa fa-gear" style="color: #f70707"></i> Modern facilities of internet and smart classes.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-md-5 contact_right">
@@ -47,13 +47,27 @@
                                 </div>
                             <?php } ?>                            
                             <input type="text" name="txtName" required class="textbox" placeholder="Your Name">
-                            <input type="email" name="txtEmail" class="textbox" placeholder="Your Email">                            							
-                            <input type="number" pattern="[0-9]*" oninvalid="setCustomValidity('Plz enter 10 digit Contact Number');"  name="txtNumber" required="required" placeholder="PHONE NUMBER" class="textbox">
+                            <input type="email" name="txtEmail" class="textbox" placeholder="Your Email">                            							                            
+                            <?php
+                            $data = array(
+                                'type' => 'number',
+                                'name' => 'txtNumber',
+                                'id' => 'txtNumber',
+                                'pattern' => '[0-9]*',
+                                'oninvalid' => "setCustomValidity('Plz enter 10 digit Contact Number')",
+                                'onchange' => "try{setCustomValidity('')}catch(e){}",
+                                'minlength' => '10',
+                                'maxlength' => '10',
+                                'required' => 'required',
+                                'placeholder' => 'Phone Number'
+                            );
+                            echo form_input($data);
+                            ?>
                             <select id="txtCourse" name="txtCourse" required onChange="getValues(this.value)">
                                 <option>Select Class</option>
-                                <?php for($i=6; $i<=12; $i++){?>
-                                    <option value="<?php echo 'Class' . $i?>"><?php echo 'Class ' . $i?></option>
-                                <?php }?>                                                               
+                                <?php for ($i = 6; $i <= 12; $i++) { ?>
+                                    <option value="<?php echo 'Class' . $i ?>"><?php echo 'Class ' . $i ?></option>
+                                <?php } ?>                                                               
                             </select>
 
                             <input type="text" name="txtAddress" required class="textbox" placeholder="Address">
@@ -65,6 +79,7 @@
                 </div>
             </div>
         </div>
+
     </div>               
 </div>    
 </div>

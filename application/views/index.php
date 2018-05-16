@@ -5,6 +5,7 @@
     <div><img src="<?php echo base_url('assets/images/2.jpg'); ?>" class="img-responsive" alt="img01"/></div>
     <div><img src="<?php echo base_url('assets/images/1.jpg'); ?>" class="img-responsive" alt="img02"/></div>
     <div><img src="<?php echo base_url('assets/images/3.jpg'); ?>" class="img-responsive" alt="img03"/></div>            
+	<div><img src="<?php echo base_url('assets/images/6.jpg'); ?>" class="img-responsive" alt="img03"/></div>            
 </div>
 </div>
 <!-- Ends Header -->
@@ -36,7 +37,7 @@
         <div class="container">            
             <div class="row">
                 <div class="col-sm-6">
-                    <img src="<?php echo base_url('assets/images/h1.jpg'); ?>" class="img-responsive" alt=""/>
+                    <img src="<?php echo base_url('assets/images/h1.jpg'); ?>" class="img-responsive img-thumbnail" alt=""/>
                 </div>
                 <div class="col-sm-6 history_grid">
                     <h3>Welcome to Our School</h3>					
