@@ -103,7 +103,19 @@ class Web extends CI_Controller {
         $this->load->view('registration', $data);
         $this->load->view('templates/footer');
     }
+    
+    function activities() {
+        $this->load->model('my_model', 'wm');
+        $data['activity_'] = $this->mm->get_activities();
+        if (count($data['activity_']) == 0)
+            redirect('/');
 
+        $data['pageName']='Activities';
+        $this->load->view('templates/header');        
+        $this->load->view('activities', $data);
+        $this->load->view('templates/footer');
+    }
+    
     function uc_() {
         $to_ = 'ttchld@gmail.com';
         $from_ = 'info@teamfreelancers.com';

@@ -56,6 +56,14 @@ class My_model extends CI_Model {
         return $query->result();
     }
 
+    function get_activities() {
+        $this->db->order_by('ID', 'desc');
+        $this->db->where('STATUS_', 1);
+        $this->db->limit(20,0);
+        $query = $this->db->get('activities');
+        return $query->result();
+    }
+
     function _db_error() {
         //exception handling ------------------
         if ($this->db->trans_status() == FALSE) {

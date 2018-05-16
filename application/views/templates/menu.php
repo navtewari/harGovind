@@ -15,7 +15,7 @@
                                 <ul class="dropdown">
                                     <li><a href="<?php echo site_url('web/admission');?>">Admissions</a></li>
                                     <li><a href="<?php echo site_url('web/profile');?>">Teachers Profile</a></li>
-                                    <li><a href="#">Activities</a></li>
+                                    <li><a href="<?php echo site_url('web/activities');?>">Activities</a></li>
                                     <li><a href="<?php echo site_url('web/achievements');?>">Achievements</a></li>
                                 </ul>
                             </li>
