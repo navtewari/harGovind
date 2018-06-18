@@ -40,14 +40,7 @@ class Web extends CI_Controller {
         $this->load->view('achievement');
         $this->load->view('templates/footer');
     }
-
-    public function whyAIM() {
-        $data['pageName'] = 'Why AIM';
-        $this->load->view('templates/header');
-        $this->load->view('templates/headInnerPage', $data);
-        $this->load->view('why');
-        $this->load->view('templates/footer');
-    }
+    
 
     public function recruiters() {
         $data['pageName'] = 'Recruiters';
@@ -68,7 +61,7 @@ class Web extends CI_Controller {
     }
     
     public function profile() {
-        $data['pageName'] = 'Photo Gallery';
+        $data['pageName'] = 'Teacher&amp;s Profile';
         $data['profile'] = $this->mm->get_profile();
 
         $this->load->view('templates/header');

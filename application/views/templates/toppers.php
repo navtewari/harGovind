@@ -1,5 +1,5 @@
 <div class="welcome_desc">                            
-                            <h3>Our Toppers (2017-18)</h3>
+                            <h3>Our Toppers (2017-18) - Uttarakhand Board Merit</h3>
                             <div class="course_demo">
                                 <ul id="flexiselDemo3">
                                     <?php foreach ($toppers as $item) { ?>
@@ -7,7 +7,7 @@
                                         <img src="<?php echo base_url('dpanel/_assets_/toppers/'.$item->PHOTO_); ?>" class="img-responsive" style="width: 140px" />
                                         <div class="desc">
                                             <h3><?php echo $item->SNAME; ?></h3>
-                                            <p><?php if($item->MERIT_NAME != 'x') { echo $item->MERIT_NAME; } ?><br> 
+                                            <p style="color: #000; font-weight:bold;"><?php if($item->MERIT_NAME != 'x') { echo $item->MERIT_NAME; } ?><br> 
                                                 <?php echo $item->YOP; ?><br>
                                                 <?php if($item->RANK != 'x') { echo $item->RANK; }?>
                                             </p>

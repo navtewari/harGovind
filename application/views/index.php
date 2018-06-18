@@ -57,7 +57,7 @@
                 <div class="col-md-6">
                     <div class="post1">       
                         <h3><a href="#">Manager's Message</a></h3>                            
-                        <p align="justify"><img src="<?php echo base_url('assets/images/avatar.png'); ?>" alt="image" class="img-responsive img-thumbnail" style="margin:0 10px; min-width: 170px;" align='left'> Education is the most important part of a person's life. It not only modifies the animal instincts but also instils moral and ethical merits. It is the responsibility of the educational institutions to provide an atmosphere of freedom to each and every one irrespective of any discrimination.</p>
+                        <p align="justify"><img src="<?php echo base_url('assets/images/c1.jpg'); ?>" alt="image" class="img-responsive img-thumbnail" style="margin:0 10px; min-width: 170px;" align='left'> Education is the most important part of a person's life. It not only modifies the animal instincts but also instils moral and ethical merits. It is the responsibility of the educational institutions to provide an atmosphere of freedom to each and every one irrespective of any discrimination.</p>
                         <!--nav class="cl-effect-7" id="cl-effect-7">
                             <a href="#cl-effect-7">Read More</a>
                         </nav-->
